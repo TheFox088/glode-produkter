@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lenovo ThinkCentre M73 i5 micro PC</title>
+</head>
+<body>
+        
+        <header>
+            <h1>Product Informastion</h1>
+        </header>
+
+        <main>
+                <!--Infomastion for product-->
+            <section id="info">
+                <p id="name">Lenovo ThinkCentre M73 i5 micro PC</p>
+                <p id="Specifications">Supplied with power cable</p>
+                <p id="description">
+                    Windows 10 Pro
+                    CPU Intel i5 4570T 2.90GHz
+                    256 GB SSD
+                    16 GB RAM
+                    3 x USB 2
+                    2 x USB 3
+                    1 VGA
+                    1 Display Port</p>
+                    <p id="price"> nok 1,750.00</p>
+                    <p id="in_stock">1</p>
+            </section>
+
+            <!--Input box and button with label-->
+            <section>
+                <form action="your_cart_processing_script.php" method="post">
+                    <div>
+                        <label for="quantity" class="screen_reader_text"></label>
+                        <input type="number" id="quantity" name="quantity" placeholder="På lager" class="input_text qty" value="1" min="1">
+                        <button type="submit" name="add_to_cart" value="4901" class="single_add_to_cart_btn">Add To Cart</button>
+                    </div>
+                </form>
+            </section>
+
+                <!--Reviews-->
+                <section>
+                    <div>
+                        <h2>
+                            Customer reviews
+                            <div class="star_star">
+                                <div class="yotpoStar">
+                                    <div class=" yotpo_bottomLine">
+                                        <span class="yotpo_star">
+                                            <span class="yotpo-icon-empty-star raiting-star pill- left">::befor</span>
+                                            <span class="yotpo-icon-empty-star raiting-star pill- left">::befor</span>
+                                            <span class="yotpo-icon-empty-star raiting-star pill- left">::befor</span>
+                                            <span class="yotpo-icon-empty-star raiting-star pill- left">::befor</span>
+                                            <span class="yotpo-icon-empty-star raiting-star pill- left">::befor</span>
+                                            <span class="sr-only"> 0.0 star rating</span>
+                                            <a class="text-m write-review-btn-hidden">Give your rating</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </h2>
+                        
+                    </div>
+                </section>
+        </main>
+    
+   
+</body>
+<script src="script.js"></script>
+</html>
