@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+
+.star_star {
+    /* Add styling for the star rating section */
+    cursor: pointer;
+}
+
+.yotpoStar {
+    /* Add styling for the star icons */
+}
+
+.yotpo_bottomLine {
+    /* Add styling for the bottom line of the star rating */
+}
+
+.yotpo_star {
+    /* Add styling for the star container */
+}
+
+.yotpo-icon-empty-star {
+    /* Add styling for the empty star icon */
+}
+
+.sr-only {
+    /* Add styling for screen-reader-only text */
+}
+
+.write-review-btn-hidden {
+    /* Add styling for the "Give your rating" link */
+}

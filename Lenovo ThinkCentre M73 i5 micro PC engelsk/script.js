@@ -11,3 +11,22 @@ fetch("data.json")
 
 })
 .catch(error =>console.error("Error featching data", error));
+
+
+//
+function handleRating(){
+    //Update the hidden input value
+    document.getElementById("rating").value = rating;
+
+    //Update the display star
+    for (let i = 1; i <= 5; i++) {
+        const star = document.querySelector(`.yotpoStar .yotpo_star .raiting-star:nth-child(${i})`);
+        if (i <= rating) {
+            star.classList.add('yotpo-icon-filled-star');
+            star.classList.remove('yotpo-icon-empty-star');
+        } else {
+            star.classList.remove('yotpo-icon-filled-star');
+            star.classList.add('yotpo-icon-empty-star');
+        }
+    }
+}

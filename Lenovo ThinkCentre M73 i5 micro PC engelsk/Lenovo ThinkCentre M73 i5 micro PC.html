@@ -35,26 +35,35 @@
 
                 <!--Reviews-->
                 <section>
-                    <div>
-                        <h2>
-                            Customer reviews
-                            <div class="star_star">
-                                <div class="yotpoStar">
-                                    <div class=" yotpo_bottomLine">
-                                        <span class="yotpo_star">
-                                            <span class="yotpo-icon-empty-star raiting-star pill- left">::befor</span>
-                                            <span class="yotpo-icon-empty-star raiting-star pill- left">::befor</span>
-                                            <span class="yotpo-icon-empty-star raiting-star pill- left">::befor</span>
-                                            <span class="yotpo-icon-empty-star raiting-star pill- left">::befor</span>
-                                            <span class="yotpo-icon-empty-star raiting-star pill- left">::befor</span>
-                                            <span class="sr-only"> 0.0 star rating</span>
-                                            <a class="text-m write-review-btn-hidden">Give your rating</a>
-                                        </span>
-                                    </div>
+                    <div class="customer-review-section">
+                        <h2>Customer Reviews</h2>
+                    
+                        <div class="star_star" onclick="handleRaiting(5)">
+                            <div class="yotpoStar">
+                                <div class="yotpo_bottomLine">
+                                    <span class="yotpo_star">
+                                        <span class="yotpo-icon-empty-star raiting-star pill- left"></span>
+                                        <span class="yotpo-icon-empty-star raiting-star pill- left"></span>
+                                        <span class="yotpo-icon-empty-star raiting-star pill- left"></span>
+                                        <span class="yotpo-icon-empty-star raiting-star pill- left"></span>
+                                        <span class="yotpo-icon-empty-star raiting-star pill- left"></span>
+                                        <span class="sr-only"> 0.0 star rating</span>
+                                        <a href="#" class="text-m write-review-btn-hidden">Give your rating</a>
+                                    </span>
                                 </div>
                             </div>
-                        </h2>
-                        
+                        </div>
+                    
+                        <!-- Customer review form -->
+                        <form action="submit_review.php" method="post">
+                            <label for="review">Write your review:</label>
+                            <textarea id="review" name="review" rows="4" cols="50"></textarea>
+                            <br>
+                            <label for="rating">Rate your experience:</label>
+                            <!-- Add input for rating, e.g., a dropdown or radio buttons -->
+                            <br>
+                            <input type="submit" value="Submit Review">
+                        </form>
                     </div>
                 </section>
         </main>
